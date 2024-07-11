@@ -122,7 +122,6 @@ class PannableCanvas(tk.Frame):
     #track starting coords
     def start_pan(self, event):
         self.canvas.scan_mark(event.x, event.y)
-        print(f'{self.canvas.canvasx(event.x)}, {self.canvas.canvasy(event.y)}')
         
     #drag with scan_dragto
     def pan(self, event):
@@ -236,7 +235,7 @@ root.state('zoomed')
 max_width = 1600
 max_height = 800
 
-# Load and display an imageLLL
+# Load and display an image
 image_path = '1stFloor.png' 
 
 #frame and button init
